@@ -11,5 +11,12 @@
             "steamid": "steamid64_2",
             "shared_secret": "your_shared_secret_2",
             "identity_secret": "your_identity_secret_2"
+        },
+
+    "login3" :
+        {
+            "steamid": "steamid64_3",
+            "shared_secret": "your_shared_secret_3",
+            "identity_secret": "your_identity_secret_3"
         }
 }
