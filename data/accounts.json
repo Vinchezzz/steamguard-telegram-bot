@@ -1,0 +1,15 @@
+{
+    "login1" :
+        {
+            "steamid": "steamid64_1",
+            "shared_secret": "your_shared_secret_1",
+            "identity_secret": "your_identity_secret_1"
+        },
+
+    "login2" :
+        {
+            "steamid": "steamid64_2",
+            "shared_secret": "your_shared_secret_2",
+            "identity_secret": "your_identity_secret_2"
+        }
+}
