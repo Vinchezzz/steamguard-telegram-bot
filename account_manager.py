@@ -20,12 +20,12 @@ class AccountManager:
         except FileNotFoundError:
             return {}
     
-    def get_code(self, account_id):
-        shared_secret = self.accounts[account_id]['shared_secret']
-        
+    def get_code(self, account_id: str, timestamp: int | None = None) -> str:
         """Returns 2FA code"""
         if account_id not in self.accounts:
-            raise ValueError(f"Аккаунт {account_id} не найден")
+            raise ValueError(f"Account {account_id} not found")
+        else:
+            shared_secret = self.accounts[account_id]['shared_secret']
         
         # Calling get_code()
         if timestamp is None:
